@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Tip Calculator 💸</h1>
+    <p>Calculate your bill in seconds.</p>
+
+    <label for="bill">Bill Amount (₹)</label>
+    <input id="bill" type="number" min="0" placeholder="Enter bill amount">
+
+    <label for="tip">Tip Percentage</label>
+    <select id="tip">
+      <option value="5">5%</option>
+      <option value="10" selected>10%</option>
+      <option value="15">15%</option>
+      <option value="20">20%</option>
+      <option value="25">25%</option>
+    </select>
+
+    <label for="people">Number of People</label>
+    <input id="people" type="number" min="1" step="1" value="1">
+
+    <button id="calculate">Calculate</button>
+
+    <div class="result">
+      <p>Tip: <strong id="tipAmount">₹0.00</strong></p>
+      <p>Total: <strong id="total">₹0.00</strong></p>
+      <p>Per Person: <strong id="perPerson">₹0.00</strong></p>
+      <p id="error" role="status"></p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
